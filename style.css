@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	
+*/
+
+/* Mobile Layout: 480px and below. */
+p{
+	clear: both;
+	margin: 7px;
+	font-size: 20px;
+	font-weight: bold;
+	padding-left: 10px;
+	padding-right: 10PX;
+	padding-top: 10PX;
+	padding-bottom:10px;
+}
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: center;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#LayoutDiv2 {
+	clear: both;
+	float: none;
+	margin-left: auto;
+	margin-right:auto
+	width: 80%;
+	display: block;
+	background:#999;
+}
+#LayoutDiv3 {
+	clear: both;
+	float: none;
+	margin-left: auto;
+	margin-right:auto
+	width: 80%;
+	display: block;	
+}
+#LayoutDiv4 {
+	clear: both;
+	float: center;
+	margin-left: auto;
+	margin-left:auto;
+	width: 100%;
+	display: block;
+	border: 3px solid black;
+}
+h { text-align:center;
+	
+	}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	background:#999;
+}
+#LayoutDiv2 {
+	clear: both;
+	float: none;
+	margin-left: auto;
+	margin-right:auto;
+	width: 80%;
+	display: block;
+	background:#999;
+}
+#LayoutDiv3 {
+	clear: both;
+	float: none;
+	margin-left: auto;
+	margin-right:auto;
+	width: 80%;
+	display: block;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+	border: 0px solid black;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	border: 3px solid black;
+}
+#LayoutDiv2 {
+	clear: both;
+	float: none;
+	margin-left: auto;
+	margin-right:auto;
+	width: 97%;
+	display: block;
+	background:#999;
+}
+#LayoutDiv3 {
+	clear: both;
+	float: none;
+	margin-left: auto;
+	margin-right:auto;
+	width: 97%;
+	display: block;
+	border: 0px solid black;
+}
+}
